@@ -15,7 +15,7 @@ class PlanetsViewController: UIViewController {
         }
     }
     
-    var viewModel: PlanetsViewModel = PlanetsViewModel()
+    var viewModel: PlanetsViewModelType = PlanetsViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,8 +23,8 @@ class PlanetsViewController: UIViewController {
     }
     
     private func setupObservables() {
-        viewModel.data
-            .drive(tableView.rx.items(cellIdentifier: Constants.cellId)) { _, planet, cell in
+        viewModel.planets
+            .bind(to: tableView.rx.items(cellIdentifier: Constants.cellId)) { _, planet, cell in
                 cell.textLabel?.text = planet.name
             }
             .disposed(by: disposeBag)

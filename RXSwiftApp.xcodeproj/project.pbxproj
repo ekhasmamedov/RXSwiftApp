@@ -13,12 +13,16 @@
 		55996EF5227DFFBC004E613E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55996EF3227DFFBC004E613E /* Main.storyboard */; };
 		55996EF7227DFFBE004E613E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 55996EF6227DFFBE004E613E /* Assets.xcassets */; };
 		55996EFA227DFFBE004E613E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55996EF8227DFFBE004E613E /* LaunchScreen.storyboard */; };
-		55996F05227DFFBE004E613E /* RXSwiftAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F04227DFFBE004E613E /* RXSwiftAppTests.swift */; };
 		55996F112288A5C8004E613E /* PeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F102288A5C8004E613E /* PeopleViewController.swift */; };
 		55996F132288A6AD004E613E /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F122288A6AD004E613E /* AuthCoordinator.swift */; };
 		55996F162288AA63004E613E /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F152288AA63004E613E /* ApiService.swift */; };
 		55996F182288AC3A004E613E /* PlanetsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F172288AC3A004E613E /* PlanetsViewModel.swift */; };
 		55996F1B2288AF2A004E613E /* Planet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F1A2288AF2A004E613E /* Planet.swift */; };
+		55996F1D2288CC54004E613E /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F1C2288CC54004E613E /* APIRequest.swift */; };
+		55996F1F2288CF8E004E613E /* PlanetsApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F1E2288CF8E004E613E /* PlanetsApi.swift */; };
+		55996F222288DEB9004E613E /* PlanetsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F212288DEB9004E613E /* PlanetsResponse.swift */; };
+		55996F262288E4AD004E613E /* PlanetsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F252288E4AD004E613E /* PlanetsViewModelTests.swift */; };
+		55996F292288E570004E613E /* MockApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55996F282288E570004E613E /* MockApiService.swift */; };
 		98952056BA8A04277A2C2382 /* Pods_RXSwiftApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFDE65BA4779739F6D22D8E1 /* Pods_RXSwiftApp.framework */; };
 		BE10B53B1AA4B691D5FE2B8B /* Pods_RXSwiftAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BC33E75FCE2830EF00C6B96 /* Pods_RXSwiftAppTests.framework */; };
 /* End PBXBuildFile section */
@@ -47,13 +51,17 @@
 		55996EF9227DFFBE004E613E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		55996EFB227DFFBE004E613E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55996F00227DFFBE004E613E /* RXSwiftAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RXSwiftAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		55996F04227DFFBE004E613E /* RXSwiftAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftAppTests.swift; sourceTree = "<group>"; };
 		55996F06227DFFBE004E613E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55996F102288A5C8004E613E /* PeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewController.swift; sourceTree = "<group>"; };
 		55996F122288A6AD004E613E /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		55996F152288AA63004E613E /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		55996F172288AC3A004E613E /* PlanetsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewModel.swift; sourceTree = "<group>"; };
 		55996F1A2288AF2A004E613E /* Planet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
+		55996F1C2288CC54004E613E /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		55996F1E2288CF8E004E613E /* PlanetsApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsApi.swift; sourceTree = "<group>"; };
+		55996F212288DEB9004E613E /* PlanetsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsResponse.swift; sourceTree = "<group>"; };
+		55996F252288E4AD004E613E /* PlanetsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetsViewModelTests.swift; sourceTree = "<group>"; };
+		55996F282288E570004E613E /* MockApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiService.swift; sourceTree = "<group>"; };
 		E6A9795BE73F25FA02C1A767 /* Pods-RXSwiftApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwiftApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RXSwiftApp/Pods-RXSwiftApp.debug.xcconfig"; sourceTree = "<group>"; };
 		EFDE65BA4779739F6D22D8E1 /* Pods_RXSwiftApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSwiftApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -110,18 +118,17 @@
 		55996EEC227DFFBC004E613E /* RXSwiftApp */ = {
 			isa = PBXGroup;
 			children = (
+				55996EED227DFFBC004E613E /* AppDelegate.swift */,
+				55996EF6227DFFBE004E613E /* Assets.xcassets */,
+				55996EEF227DFFBC004E613E /* AuthViewController.swift */,
+				55996F0F227E1716004E613E /* Coordinators */,
+				55996EFB227DFFBE004E613E /* Info.plist */,
+				55996EF8227DFFBE004E613E /* LaunchScreen.storyboard */,
+				55996EF3227DFFBC004E613E /* Main.storyboard */,
 				55996F192288AF10004E613E /* Models */,
 				55996F142288AA4A004E613E /* Networking */,
-				55996F0F227E1716004E613E /* Coordinators */,
-				55996EED227DFFBC004E613E /* AppDelegate.swift */,
-				55996EEF227DFFBC004E613E /* AuthViewController.swift */,
-				55996EF1227DFFBC004E613E /* PlanetsViewController.swift */,
-				55996F172288AC3A004E613E /* PlanetsViewModel.swift */,
 				55996F102288A5C8004E613E /* PeopleViewController.swift */,
-				55996EF3227DFFBC004E613E /* Main.storyboard */,
-				55996EF6227DFFBE004E613E /* Assets.xcassets */,
-				55996EF8227DFFBE004E613E /* LaunchScreen.storyboard */,
-				55996EFB227DFFBE004E613E /* Info.plist */,
+				55996F242288E05C004E613E /* UI */,
 			);
 			path = RXSwiftApp;
 			sourceTree = "<group>";
@@ -129,8 +136,10 @@
 		55996F03227DFFBE004E613E /* RXSwiftAppTests */ = {
 			isa = PBXGroup;
 			children = (
-				55996F04227DFFBE004E613E /* RXSwiftAppTests.swift */,
+				55996F2B2288E71C004E613E /* Networking */,
+				55996F272288E55C004E613E /* Helpers */,
 				55996F06227DFFBE004E613E /* Info.plist */,
+				55996F252288E4AD004E613E /* PlanetsViewModelTests.swift */,
 			);
 			path = RXSwiftAppTests;
 			sourceTree = "<group>";
@@ -146,7 +155,9 @@
 		55996F142288AA4A004E613E /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				55996F2A2288E61C004E613E /* Planets */,
 				55996F152288AA63004E613E /* ApiService.swift */,
+				55996F1C2288CC54004E613E /* APIRequest.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -157,6 +168,55 @@
 				55996F1A2288AF2A004E613E /* Planet.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		55996F202288DEAC004E613E /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				55996F212288DEB9004E613E /* PlanetsResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		55996F232288E033004E613E /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				55996EF1227DFFBC004E613E /* PlanetsViewController.swift */,
+				55996F172288AC3A004E613E /* PlanetsViewModel.swift */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		55996F242288E05C004E613E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				55996F232288E033004E613E /* Planets */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		55996F272288E55C004E613E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				55996F282288E570004E613E /* MockApiService.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		55996F2A2288E61C004E613E /* Planets */ = {
+			isa = PBXGroup;
+			children = (
+				55996F202288DEAC004E613E /* Responses */,
+				55996F1E2288CF8E004E613E /* PlanetsApi.swift */,
+			);
+			path = Planets;
+			sourceTree = "<group>";
+		};
+		55996F2B2288E71C004E613E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
 			sourceTree = "<group>";
 		};
 		7156088442F750B7F6EC8BBE /* Pods */ = {
@@ -358,7 +418,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55996F1D2288CC54004E613E /* APIRequest.swift in Sources */,
 				55996F132288A6AD004E613E /* AuthCoordinator.swift in Sources */,
+				55996F1F2288CF8E004E613E /* PlanetsApi.swift in Sources */,
+				55996F222288DEB9004E613E /* PlanetsResponse.swift in Sources */,
 				55996F182288AC3A004E613E /* PlanetsViewModel.swift in Sources */,
 				55996EF2227DFFBC004E613E /* PlanetsViewController.swift in Sources */,
 				55996F1B2288AF2A004E613E /* Planet.swift in Sources */,
@@ -373,7 +436,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55996F05227DFFBE004E613E /* RXSwiftAppTests.swift in Sources */,
+				55996F292288E570004E613E /* MockApiService.swift in Sources */,
+				55996F262288E4AD004E613E /* PlanetsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
